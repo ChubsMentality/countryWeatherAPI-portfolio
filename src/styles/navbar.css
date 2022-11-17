@@ -1,0 +1,294 @@
+.navbar {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--margin-mobileM);
+}
+
+.navbar-logo {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search-container {
+    display: flex;
+    align-items: center;
+    background: none;
+    outline: none;
+    margin-right: 10px;
+    position: relative;
+    padding: 0 30px 0 0;
+    border-radius: 25px;
+    height: 28px;
+    width: 190px;
+}
+
+.navbar-search-field {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: .75rem;
+    padding-left: 10px;
+    outline: none;
+}
+
+.navbar-searchIcon {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.toggleThemeMobileContainer {
+    border-radius: 100%;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+
+.toggleThemeMobileIcon {
+    height: 16px;
+    width: 16px;
+}
+
+.toggleThemeMenu {
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+.themeMenu:first-of-type {
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.themeMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.toggleThemeMenuIcon {
+    height: 16px;
+    width: 16px;
+}
+
+.themeMenuTxt {
+    margin-left: 20px;
+    font-size: .95rem;
+}
+
+@media screen and (min-width: 425px) {
+    .navbar {
+        /* outline: 1px solid white; */
+        padding: 0 var(--margin-mobileL);
+    }
+
+    .navbar-logo {
+        height: 28px;
+        width: 28px;
+    }
+
+    .navbar-search-container {
+        height: 30px;
+        width: 210px;
+        font-size: .7rem;
+        margin-right: 15px;
+        padding: 0 35px 0 0;
+    }
+
+    .navbar-search-field {
+        padding-left: 15px;
+    }
+}
+
+/* 768 x 1024 - Tablet */
+@media screen and (min-width: 768px) {
+    .navbar {
+        padding: 0 var(--margin-tablet);
+        /* outline: 1px solid white; */
+    }
+
+    .navbar-logo {
+        height: 30px;
+        width: 30px;
+    }
+
+    .navbar-search-container {
+        height: 30px;
+        width: 270px;
+        margin-right: 30px;
+        padding-right: 45px;
+    }
+
+    .navbar-search-field {
+        font-size: .8rem;
+    }
+
+    .navbar-searchIcon {
+        height: 18px;
+        width: 18px;
+        top: 5px;
+        right: 13px;
+    }
+
+    .toggleThemeMobileContainer {
+        height: 38px;
+        width: 38px;
+    }
+
+    .toggleThemeMobileIcon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .toggleThemeMenu {
+        top: 45px;
+    }
+
+    .themeMenu {
+        padding: 15px 30px;
+    }
+
+    .toggleThemeMenuIcon {
+        height: 23px;
+        width: 23px;
+    }
+
+    .themeMenuTxt {
+        font-size: 1.1rem;
+    }
+}
+
+/* 1024 x 768 - Laptop, Small PC */
+@media screen and (min-width: 1024px) {
+    .navbar {
+        padding: 0 var(--margin-laptop);
+    }
+
+    .navbar-logo {
+        height: 26px;
+        width: 26px;
+    }
+
+    .navbar-search-container {
+        height: 29px;
+        width: 240px;
+    }
+
+    .navbar-search-field {
+        font-size: .7rem;
+    }
+}
+
+/* 1280 x 1024 */
+@media screen and (min-width: 1280px) {
+    .navbar {
+        padding: 0 var(--margin-1280);
+        height: 10vh;
+    }
+
+    .navbar-logo {
+        height: 30px;
+        width: 30px;
+    }
+
+    .navbar-search-container {
+        height: 30px;
+        width: 250px;
+        margin-right: 45px;
+    }
+}
+
+/* 1366 x 768 */
+@media screen and (min-width: 1366px) {
+    .navbar {
+        padding: 20px var(--margin-1366);
+    }
+
+    .navbar-search-container {
+        height: 32px;
+    }
+
+    .navbar-search-field {
+        font-size: .8rem;
+    }
+
+    .navbar-searchIcon {
+        top: 6px;
+    }
+}
+
+/* 1440 x 900 */
+/* 1600 x 900 */
+@media screen and (min-width: 1600px) {
+    .navbar {
+        padding: 20px var(--margin-1600);
+    }
+
+    .navbar-logo {
+        height: 37px;
+        width: 37px;
+    }
+
+    .navbar-search-container {
+        height: 37px;
+        width: 300px;
+    }
+
+    .navbar-search-field {
+        padding-left: 15px;
+        font-size: .83rem;
+    }
+
+    .navbar-searchIcon {
+        top: 8px;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/* 1920 x 1080 */
+@media screen and (min-width: 1920px) {
+    .navbar {
+        padding: 20px var(--margin-1920);
+    }
+
+    .navbar-logo {
+        height: 43px;
+        width: 43px;
+    }
+
+    .navbar-search-container {
+        height: 42px;
+        width: 380px;
+    }
+
+    .navbar-search-field {
+        padding-left: 20px;
+        font-size: .9rem;
+    }
+
+    .navbar-searchIcon {
+        top: 9px;
+        height: 22px;
+        width: 22px;
+    }
+}

@@ -1,0 +1,390 @@
+.home-body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.home-hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 25px var(--margin-mobileM) 80px var(--margin-mobileM);
+}
+
+.home-hero-title-container {
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    margin: 30px auto 8px auto;
+    padding: 5px 8px;
+}
+
+.home-hero-title {
+    font-size: .7rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.home-hero-header {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px
+}
+
+.home-hero-desc {
+    font-weight: 300;
+    text-align: center;
+    font-weight: .95rem;
+    margin-top: 10px; 
+    line-height: 22px;
+}
+
+.home-hero-lottie {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.home-countries-container {
+    height: auto;
+    width: 100vw;
+    padding: 40px var(--margin-mobileM);
+}
+
+.home-countries-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-countries-header {
+    font-weight: 500;
+}
+
+.home-countries-select {
+    cursor: pointer;
+}
+
+.home-countries-cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 152.5px);
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media screen and (min-width: 425px) {
+    .home-hero-section {
+        margin: 25px var(--margin-mobileL) 70px var(--margin-mobileL);
+    }
+
+    .home-hero-title-container {
+        margin-top: 25px;
+    }
+
+    .home-hero-title {
+        font-size: .73rem;
+    }
+
+    .home-hero-header {
+        font-size: 2.3rem;
+        margin-top: 2px;
+    }
+
+    .home-hero-desc {
+        font-size: 1.05rem;
+        line-height: 28px;
+    }
+
+    .home-hero-lottie {
+        height: 280px;
+        width: 280px;
+    }
+
+    .home-countries-container {
+        padding: 40px var(--margin-mobileL);
+    }
+    
+    .home-countries-header {
+        font-size: 1.1rem;
+    }
+
+    .home-countries-cards {
+        grid-template-columns: repeat(auto-fit, auto);
+        row-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home-hero-section {
+        margin: 45px var(--margin-tablet) 80px var(--margin-tablet);
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .home-hero-left {
+        width: 53%;
+    }
+
+    .home-hero-title-container {
+        margin: 0;
+    }
+
+    .home-hero-title, .home-hero-header, .home-hero-desc {
+        text-align: left;
+    }
+
+    .home-hero-title-container {
+        margin-bottom: 5px
+    }
+
+    .home-hero-title {
+        font-size: .65rem;
+    }
+
+    .home-hero-header {
+        font-size: 2.2rem;
+    }
+
+    .home-hero-desc {
+        font-size: 1rem;
+        width: 95%;
+    }
+
+    .home-hero-lottie {
+        height: 250px;
+        width: 250px;
+    }
+
+    .home-countries-container {
+        padding: 45px var(--margin-tablet);
+    }
+
+    .home-countries-header {
+        font-size: 1.2rem;
+    }
+    
+    .home-countries-select {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home-hero-section {
+        margin: 50px var(--margin-laptop) 75px var(--margin-laptop);
+    }
+
+    .home-hero-left {
+        width: 50%;
+    }
+
+    .home-hero-title-container {
+        margin-bottom: 10px;
+    }
+
+    .home-hero-title {
+        font-size: .6rem;
+    }
+
+    .home-hero-header {
+        font-size: 2.7rem;
+    }
+
+    .home-hero-desc {
+        font-size: 1.05rem;
+        width: 93%;
+    }
+
+    .home-hero-lottie {
+        height: 300px;
+        width: 300px;
+    }
+
+    .home-countries-container {
+        padding: 60px var(--margin-laptop);
+    }
+
+    .home-countries-cards {
+        grid-template-columns: repeat(auto-fit, auto);
+        row-gap: 40px;
+    }
+
+    .home-countries-header {
+        font-size: 1.4rem;
+    }
+
+    .home-countries-select {
+        padding: 3px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .home-hero-section {
+        margin: 50px var(--margin-1280) 90px var(--margin-1280);
+    }
+
+    .home-hero-left {
+        width: 48%;
+    }
+
+    .home-hero-title-container {
+
+    }
+
+    .home-hero-title {
+        font-size: .75rem;
+    }
+
+    .home-hero-header {
+        font-size: 3.35rem;
+    }
+
+    .home-hero-desc {
+        font-size: 1.15rem;
+        line-height: 30px;
+    }
+
+    .home-hero-lottie {
+        height: 380px;
+        width: 380px;
+    }
+
+    .home-countries-container {
+        padding: 50px var(--margin-1280) 80px var(--margin-1280);
+    }
+
+    .home-countries-cards {
+        grid-template-columns: repeat(5, auto);
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .home-hero-section {
+        margin: 50px var(--margin-1366) 90px var(--margin-1366);
+    }
+
+    .home-hero-left { 
+        width: 47%;
+    }
+
+    .home-hero-title-container {
+        margin-bottom: 10px;
+    }
+
+    .home-hero-title {
+        font-size: .8rem;
+    }
+
+    .home-hero-header {
+        font-size: 3.4rem;
+    }
+
+    .home-hero-desc {
+        font-size: 1.2rem;
+    }
+
+    .home-hero-lottie {
+        height: 400px;
+        width: 400px;
+    }
+
+    .home-countries-container {
+        padding: 60px var(--margin-1366) 80px var(--margin-1366);
+    }
+
+    .home-countries-header {
+        font-size: 1.7rem;
+    }
+    
+}
+
+@media screen and (min-width: 1600px) {
+    .home-hero-section {
+        margin: 60px var(--margin-1600) 90px var(--margin-1600);
+    }
+
+    .home-hero-left {
+        width: 47%;
+    }
+
+    .home-hero-title-container {
+    }
+
+    .home-hero-title {
+        font-size: .85rem;
+    }
+
+    .home-hero-header {
+        font-size: 3.85rem;
+    }
+
+    .home-hero-desc {
+        font-size: 1.45rem;
+        line-height: 35px;
+    }
+
+    .home-hero-lottie {
+        height: 430px;
+        width: 430px;
+    }
+
+    .home-countries-container {
+        padding: 70px var(--margin-1600) 90px var(--margin-1600);
+    }
+
+    .home-countries-header {
+        font-size: 1.9rem;
+    }
+
+    .home-countries-select {
+        font-size: 1.2rem;
+    }
+
+    .home-countries-cards {
+        grid-template-columns: repeat(5, auto);
+        row-gap: 60px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .home-hero-section {
+        margin: 90px var(--margin-1920) 110px var(--margin-1920);
+    }
+
+    .home-hero-title {
+        font-size: 1.05rem;
+    }
+
+    .home-hero-header {
+        margin-top: 15px;
+        font-size: 4.2rem;
+        margin-bottom: 15px;
+    }
+
+    .home-hero-desc {
+        font-size: 1.55rem;
+        line-height: 45px;
+    }
+
+    .home-hero-lottie {
+        height: 520px;
+        width: 520px;
+    }
+
+    .home-countries-container {
+        padding: 90px var(--margin-1920) 120px var(--margin-1920);
+    }
+
+    .home-countries-header {
+        font-size: 2.3rem;
+    }
+
+    .home-countries-select {
+        font-size: 1.4rem;
+    }
+
+    .home-countries-cards {
+        margin-top: 60px;
+        grid-template-columns: repeat(4, auto);
+    }
+}

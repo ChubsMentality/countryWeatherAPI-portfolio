@@ -1,0 +1,119 @@
+.card-body {
+    height: 200px;
+    width: 150px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-img-container {
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-flag-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .25s ease-in;
+    -webkit-user-drag: none;
+}
+
+.card-body:hover .card-flag-img {
+    scale: 1.1;
+}
+
+.card-country-title {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card-country-content {
+    font-size: .75rem;
+    font-weight: 400;
+    margin: 3px 0;
+}
+
+@media screen and (min-width: 425px) {
+    .card-body {
+        height: auto;
+    }
+
+    .card-country-title {
+        font-size: 1rem;
+        margin-bottom: 7px;
+    }
+
+    .card-country-content {
+        font-size: .8rem;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-country-title {
+        font-size: .95rem;
+    }
+
+    .card-country-content {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .card-body {
+        width: 190px;
+    }
+
+    .card-img-container {
+        height: 100px;
+    }
+
+    .card-country-title {
+        font-size: 1.1rem;
+    }
+
+    .card-country-content {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .card-body {
+        width: 230px;
+    }
+
+    .card-img-container {
+        height: 130px;
+        margin-bottom: 13px;
+    }
+
+    .card-country-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .card-country-content {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .card-body {
+        width: 340px;
+    }
+
+    .card-img-container {
+        height: 180px;
+    }
+
+    .card-country-title {
+        font-size: 1.75rem;
+        margin-bottom: 15px;
+    }
+
+    .card-country-content {
+        font-size: 1.4rem;
+    }
+}

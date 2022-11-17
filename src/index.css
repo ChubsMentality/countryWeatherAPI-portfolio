@@ -1,0 +1,24 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #111;
+  transition-property: background-color, color;
+  transition-duration: .25s;
+  transition-timing-function: ease-in;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --margin-mobileM: 30px;
+  --margin-mobileL: 35px;
+  --margin-tablet: 60px;
+  --margin-laptop: 95px;
+  --margin-1280: 115px;
+  --margin-1366: 145px;
+  --margin-1600: 185px;
+  --margin-1920: 220px;
+}
+
+/* Custom scrollbar ruleset */
+

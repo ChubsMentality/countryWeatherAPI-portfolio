@@ -1,0 +1,14 @@
+.loading-container {
+    z-index: 25;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading-txt {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+}

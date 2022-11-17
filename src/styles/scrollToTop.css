@@ -1,0 +1,57 @@
+.scrollToTopCta {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #ff3333;
+    z-index: 15;
+}
+
+.scrollToTopIcon {
+    height: 38px;
+    width: 38px;
+}
+
+@media screen and (min-width: 768px) {
+    .scrollToTopCta {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+    }
+
+    .scrollToTopIcon {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .scrollToTopCta {
+        height: 70px;
+        width: 70px;
+        right: 30px;
+    }
+
+    .scrollToTopIcon {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .scrollToTopCta {
+        height: 95px;
+        width: 95px;
+        right: 30px;
+    }
+
+    .scrollToTopIcon {
+        height: 60px;
+        width: 60px;
+    }
+}

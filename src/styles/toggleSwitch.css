@@ -1,0 +1,179 @@
+.toggleThemeDesktop {
+    display: flex;
+    align-items: center;
+}
+
+.lightIcon {
+    height: 23px;
+    width: 23px;
+    margin-right: 10px;
+}
+
+.darkIcon {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.switchContainer {
+    position: relative;
+    display: inline-block;
+    outline: 1px solid white;
+    width: 100px;
+}
+
+.toggleSwitchCheckbox {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+label {
+    user-select: none;
+    outline: 1px solid white;
+    border-radius: 25px;
+}
+
+.switch-wrapper>input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.switch-wrapper>input[type="checkbox"]+.switch {
+    transform: translateX(5px);
+}
+
+.switch-wrapper>input[type="checkbox"]:checked+.switch {
+    transform: translateX(50%) translateX(-19px);
+}
+
+.switch-wrapper.large>input[type="checkbox"]:checked+.switch {
+    transform: translateX(50%) translateX(-35px);
+}
+
+.switch-wrapper>input[type="checkbox"]:disabled+.switch {
+    background: #ccc;
+}
+
+.switch-wrapper {
+    border-radius: 20px;
+    cursor: pointer;
+    height: 24px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 50px;
+}
+
+.switch-wrapper>.switch {
+    color: #fff;
+    display: inline-block;
+    height: 100%;
+    left: -100%;
+    position: relative;
+    transition: 100ms linear;
+    width: 200%;
+}
+
+.switch-wrapper>.switch>.switch-handle {
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 14px;
+    left: 50%;
+    position: relative;
+    top: 4px;
+    width: 14px;
+    z-index: 3;
+}
+
+/* 1280 x 1024 */
+@media screen and (min-width: 1280px) {
+    .darkIcon {
+        margin-left: 12px;
+    }
+
+    .lightIcon {
+        margin-right: 12px;
+    }
+}
+
+/* 1366 x 768 */
+@media screen and (min-width: 1366px) {
+    .lightIcon {
+        margin-right: 15px;
+        height: 26px;
+        width: 26px;
+    }
+
+    .darkIcon {
+        margin-left: 15px;
+        height: 21px;
+        width: 21px;
+    }
+
+    .switch-wrapper {
+        height: 27px;
+        width: 65px;
+    }
+
+    .switch-wrapper>.switch>.switch-handle {
+        height: 16px;
+        left: 50%;
+        top: 5px;
+        width: 16px;
+    }
+}
+
+/* 1440 x 900 */
+/* 1600 x 900 */
+@media screen and (min-width: 1600px) {
+    .lightIcon {
+        height: 28px;
+        width: 28px;
+        margin-right: 18px;
+    }
+
+    .darkIcon {
+        height: 22px;
+        width: 22px;
+        margin-left: 18px;
+    }
+
+    .switch-wrapper {
+        height: 28px;
+        width: 70px;
+    }
+
+    .switch-wrapper>.switch>.switch-handle {
+        height: 17px;
+        left: 50%;
+        top: 5px;
+        width: 17px;
+    }
+}
+
+/* 1920 x 1080 */
+@media screen and (min-width: 1920px) {
+    .lightIcon {
+        height: 33px;
+        width: 33px;
+    }
+
+    .darkIcon {
+        height: 25px;
+        width: 25px;
+    }
+
+    .switch-wrapper {
+        height: 33px;
+        width: 100px;
+    }
+
+    .switch-wrapper>.switch>.switch-handle {
+        height: 22px;
+        left: 45%;
+        top: 5px;
+        width: 22px;
+    }
+}

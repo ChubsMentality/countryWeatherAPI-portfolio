@@ -1,0 +1,639 @@
+.country-body {
+    height: 100%;
+    width: 100vw;
+}
+
+.country-info-container {
+    margin: 40px var(--margin-mobileM);
+}
+
+.country-flag-img {
+    width: 100%;
+    height: 160px;
+    border-radius: 1px;
+    object-fit: cover;
+    -webkit-user-drag: none;
+}
+
+.country-info-name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 25px 0 20px 0;
+}
+
+.country-info-right-subContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.country-info-right-sub-left, .country-info-right-sub-right {
+    width: 50%;
+}
+
+.country-info-right-sub-right {
+    padding-left: 10px;
+}
+
+.country-info-label-container {
+    margin-bottom: 20px;
+}
+
+.country-info-label-head, .weather-extra-label {
+    font-size: .75rem;
+    font-weight: 200;
+}
+
+.country-info-label-value, .weather-extra-value {
+    font-size: .85rem;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.weather-info-container {
+    margin: 30px 0 0 0;
+    padding: 35px var(--margin-mobileM) 50px var(--margin-mobileM);
+}
+
+.weather-info-header {
+    font-size: .75rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.weatherVideo {
+    display: none;
+}
+
+.weather-current-container {
+    
+}
+
+.weather-current-mobile {
+    display: flex;
+}
+
+.weather-current-container-mobile, .weather-current-extraInfo {
+    width: 50%;
+}
+
+.weather-current-extraInfo {
+    padding-left: 30px;
+}
+
+.weather-current-icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.weather-current-description {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.weather-current-subdesc {
+    font-size: .9rem;
+    font-weight: 200;
+    margin-top: 2px;
+    text-transform: capitalize;
+}
+
+.weather-current-temp {
+    font-size: .9rem;
+    font-weight: 200;
+    margin-top: 7px;
+}
+
+.weather-extraInfo-container {
+    margin-bottom: 12px;
+}
+
+.weather-forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 152.5px);
+    margin: 50px 0 0 0;
+    row-gap: 20px;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 425px) {
+    .country-info-container {
+        margin: 40px var(--margin-mobileL)
+    }
+
+    .country-flag-img {
+        /* width: 100%; */
+        height: 170px;
+    }
+
+    .country-info-name {
+        font-size: 1.75rem;
+        margin: 30px 0 25px 0;
+    }
+
+    /* .country-info-right-sub-right {
+        padding-left: 10px;
+    } */
+
+    .country-info-label-container {
+        margin-bottom: 25px;
+    }
+
+    .country-info-label-head, .weather-extra-label {
+        /* font-size: .75rem; */
+    }
+
+    .country-info-label-value, .weather-extra-value {
+        margin-top: 5px;
+    }
+
+    .weather-info-container {
+        margin: 35px 0 0 0;
+        padding: 40px var(--margin-mobileL) 50px var(--margin-mobileL);
+    }
+
+    .weather-info-header {
+        font-size: .8rem;
+        margin-bottom: 35px;
+    }
+
+    .weather-current-extraInfo {
+        padding-left: 20px;
+    }
+
+    .weather-forecast-container {
+        grid-template-columns: repeat(auto-fit, 170px);
+        row-gap: 35px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .country-info-container {
+        margin: 55px var(--margin-tablet) 45px var(--margin-tablet);
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .country-flag-img {
+        width: 88%;
+        height: 140px;
+    }
+
+    .country-info-left, .country-info-right {
+        width: 50%;
+    }
+
+    .googlemapContainer {
+        margin: 10px 0 0 0;
+    }
+
+    .googleStreetContainer {
+        width: 100%;
+        margin-top: 15px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .country-info-name {
+        margin: 0 0 25px 0;
+    }
+
+    .country-info-label-container {
+        margin-bottom: 18px;
+    }
+
+    .country-info-label-head, .weather-extra-label {
+        font-size: .8rem;
+    }
+
+    .country-info-label-value, .weather-exra-value {
+        font-size: .9rem;
+    }
+
+    .weather-info-container {
+        margin: 45px 0 0 0;
+        padding: 40px var(--margin-tablet) 50px var(--margin-tablet);
+    }
+
+    .weather-info-header {
+        font-size: .9rem;
+        margin-bottom: 45px;
+    }
+
+    .weather-current-container {
+        display: flex;
+    }
+
+    .weather-current-left {
+        width: 50%;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .weather-current-right {
+        width: 50%;
+        padding-left: 15px;
+    }
+
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .35);
+        z-index: 5;
+        height: 100%;
+        width: 100%;
+    }
+
+    .weather-info-overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+        z-index: 10;
+    }
+
+    .weather-current-description {
+        font-size: 1.65rem;
+        font-weight: 600;
+        color: white;
+    }
+
+    .weather-current-subdesc {
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 4px;
+        text-transform: capitalize;
+        color: white;
+    }
+
+    .weather-current-temp {
+        font-size: 1rem;
+        font-weight: 200;
+        color: white;
+        margin-top: 3.5px;
+    }
+
+    .weatherVideo {
+        display: block;
+        height: 200px;
+        width: 100%;
+        /* outline: 1px solid white; */
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .weather-forecast-container {
+        grid-template-columns: repeat(auto-fit, auto);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .country-info-container {
+        margin: 65px var(--margin-laptop) 55px var(--margin-laptop);
+    }
+
+    .country-flag-img {
+        height: 160px;
+        width: 85%;
+    }
+
+    .googlemapContainer {
+        margin: 15px 0 0 0;
+    }
+
+    .googleStreetContainer {
+        margin-top: 20px;
+    }
+
+    .country-info-name {
+        margin: 0 0 20px 0;
+        font-size: 1.85rem;
+    }
+
+    .country-info-label-head,
+    .weather-extra-label {
+        font-size: .85rem;
+    }
+
+    .country-info-label-value,
+    .weather-extra-value {
+        font-size: .95rem;
+    }
+
+    .weather-info-container {
+        margin: 65px 0 0 0;
+        padding: 45px var(--margin-laptop) 65px var(--margin-laptop);
+    }
+
+    .weather-info-header {
+        font-size: 1rem;
+        margin-bottom: 35px;
+    }
+
+    .weather-current-container {
+        margin-bottom: 80px;
+    }
+
+    .weatherVideo {
+        height: 230px;
+    }
+
+    .weather-info-overlay {
+
+    }
+
+    .weather-current-description {
+        font-size: 2rem;
+    }
+
+    .weather-current-subdesc {
+        font-size: 1.2rem;
+    }
+
+    .weather-current-temp {
+        font-size: 1.2rem;
+    }
+
+    .weather-extra-label {
+        font-size: .9rem;
+    }
+
+    .weather-extra-value {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .country-info-container {
+        margin: 95px var(--margin-1280) 75px var(--margin-1280);
+    }
+
+    .country-flag-img {
+        height: 195px;
+    }
+
+    .googlemapContainer {
+        margin: 20px 0 0 0;
+    }
+
+    .googleStreetContainer {
+        margin-top: 20px;
+    }
+
+    .country-info-name {
+        margin: 0 0 20px 0;
+        font-size: 2.2rem;
+    }
+
+    .country-info-right {
+        padding-left: 0;
+    }
+
+    .country-info-label-container {
+        margin-bottom: 20px;
+    }
+
+    .country-info-label-head, .weather-extra-label {
+
+    }
+
+    .country-info-label-value, .weather-extra-value {
+        margin-top: 5px;
+    }
+
+    .weather-info-container {
+        padding: 50px var(--margin-1280) 65px var(--margin-1280);
+    }
+
+    .weather-info-header {
+        font-size: .95rem;
+    }
+
+    .weather-current-container {
+        margin-bottom: 90px;
+    }
+
+    .weatherVideo {
+        height: 290px;
+    }
+
+    .weather-info-overlay {
+        bottom: 25px;
+        left: 25px;
+    }
+
+    .weather-current-description {
+        font-size: 2.3rem;
+    }
+
+    .weather-current-subdesc {
+        font-size: 1.2rem;
+    }
+
+    .weather-current-temp {
+        font-size: 1.2rem;
+    }
+
+    .weather-extra-label {
+        font-size: 1rem;
+    }
+
+    .weather-extra-value {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .country-info-container {
+        margin: 105px var(--margin-1366) 95px var(--margin-1366);
+    }
+
+    .country-flag-img {
+        height: 205px;
+    }
+
+    .googlemapContainer, .googleStreetContainer {
+        margin-bottom: 30px;
+    }
+
+    .country-info-name {
+        font-size: 2.45rem;
+    }
+
+    .country-info-right {
+        padding-left: 10px;
+    }
+
+    .country-info-label-container {
+        margin-bottom: 25px;
+    }
+
+    .country-info-label-head {
+        font-size: .95rem;
+    }
+
+    .country-info-label-value {
+        font-size: 1.1rem;
+    }
+
+    .weather-info-container {
+        padding: 55px var(--margin-1366) 65px var(--margin-1366);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .weather-forecast-container {
+        grid-template-columns: repeat(auto-fit, auto);
+        column-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .country-info-container {
+        margin: 100px var(--margin-1600) 110px var(--margin-1600);
+    }
+
+    .country-flag-img {
+        height: 215px;
+        width: 80%;
+    }
+
+    .googlemapContainer > .country-info-label-head, .googleStreetContainer > .country-info-label-head {
+        margin-bottom: 5px;
+    }
+
+    .country-info-name {
+        font-size: 2.85rem;
+    }
+
+    .country-info-right {
+        padding-left: 25px;
+    }
+
+    .country-info-label-container {
+        margin-bottom: 30px;
+    }
+
+    .country-info-label-head {
+        font-size: 1.05rem;
+    }
+
+    .country-info-label-value {
+        font-size: 1.15rem;
+    }
+
+    .weather-info-container {
+        padding: 95px var(--margin-1600) 85px var(--margin-1600);
+    }
+
+    .weather-info-header {
+        font-size: 1.1rem;
+    }
+
+    .weatherVideo {
+        width: 100%;
+        height: 300px;
+    }
+
+    .weather-info-overlay {
+        bottom: 25px;
+        left: 35px;
+    }
+
+    .weather-current-description {
+        font-size: 2.5rem;
+    }
+
+    .weather-current-subdesc {
+        font-size: 1.45rem;
+    }
+
+    .weather-current-temp {
+        font-size: 1.45rem;
+    }
+
+    .weather-extraInfo-container {
+        margin-bottom: 20px;
+    }
+
+    .weather-extra-label {
+        font-size: 1.1rem;
+    }
+
+    .weather-extra-value {
+        font-size: 1.25rem;
+    }
+
+    .weather-forecast-container {
+        column-gap: 45px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .country-info-container {
+        margin: 120px var(--margin-1920) 130px var(--margin-1920);
+    }
+
+    .country-flag-img {
+        height: 300px;
+    }
+
+    .country-info-name {
+        font-size: 3.4rem;
+    }
+
+    .country-info-label-head {
+        font-size: 1.3rem;
+    }
+
+    .country-info-label-value {
+        font-size: 1.4rem;
+    }
+
+    .weather-info-container {
+        padding: 100px var(--margin-1920) 95px var(--margin-1920);
+    }
+
+    .weather-info-header {
+        font-size: 1.4rem;
+    }
+
+    .weather-current-container {
+        margin-top: 50px;
+        margin-bottom: 120px;
+    }
+
+    .weatherVideo {
+        height: 400px;
+    }
+
+    .weather-current-description {
+        font-size: 3.2rem;
+    }
+
+    .weather-current-subdesc {
+        font-size: 1.8rem;
+    }
+
+    .weather-extraInfo-container {
+        margin-bottom: 30px;
+    }
+
+    .weather-current-temp {
+        font-size: 1.8rem;
+    }
+
+    .weather-extra-label {
+        font-size: 1.6rem;
+    }
+
+    .weather-extra-value {
+        font-size: 1.75rem;
+    }
+
+    .weather-forecast-container {
+        column-gap: 65px;
+    }
+}
